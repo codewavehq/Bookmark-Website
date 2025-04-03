@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF1E6;
+    color: #333;
+    text-align: center;
+}
+.web-title {
+    font-size: 50px;
+    margin: 20px 40px;
+    font-weight: 800;
+}
+form {
+    margin: 20px auto;
+    background-color: #E4EFE7;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #99BC85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+input[type="text"]:focus {
+    border-color: #99BC85;
+    box-shadow: 0 0 5px #99BC85;
+}
+.form-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.submit-button, .cancel-button {
+    background-color: #99BC85;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.submit-button:hover {
+    background-color: #7DAA6D;
+    transform: translateY(-2px);
+}
+.cancel-button {
+    background-color: #FF6B6B;
+}
+.cancel-button:hover {
+    background-color: #FF4C4C;
+    transform: translateY(-2px);
+}
+.bookmark-list {
+    margin-top: 20px;
+}
+.bookmark-list-ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.bookmark-list-ul li {
+    background-color: #99BC85;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-width: 120px;
+    text-align: center;
+}
+.bookmark-list-ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.bookmark-list-ul li a:hover {
+    color: #333;
+    text-decoration: underline;
+    transform: scale(1.1);
+   
+}
+.delete-btn
+{
+    display: none;
+}
+@keyframes shake {
+
+    0%{
+        transform: rotateZ('-15deg');
+    }
+
+    
+}
